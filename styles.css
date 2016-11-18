@@ -1,0 +1,40 @@
+#app{
+    display: flex;
+    flex-direction: row;
+    font-family: cursive;
+    justify-content: center;
+}
+
+#right{
+    /*width: 330px;*/
+    padding-right: 30px;
+}
+#left{
+    /*width: 506px;*/
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*overflow-x: scroll;
+    white-space: nowrap;*/
+}
+
+li{
+    padding: 0px 5px 0px 5px;
+}
+
+li:nth-child(odd){
+    /*Candy-Striped, Ha ha get it?*/
+    background-color: #FF7C7C;
+}
+
+.id{
+    display: inline;
+    padding-right: 10px;
+}
+.title{
+    display: inline;
+}
