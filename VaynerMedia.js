@@ -63,7 +63,8 @@ function drop(ev){
         targetElement = targetElement.parentNode;
     }
     var userID = targetElement.getAttribute("id").substr(4,1);      //Get's the userID from the UL's id attr
-    
+    //Removing this portion since it was only required for the coding challenge and it makes the drag and drop run slow since it waits on an ajax response.
+    /*
     //Makes an AJAX call to change the user id on the album
     $.ajax({
         url: 'https://jsonplaceholder.typicode.com/albums/'+data,
@@ -74,5 +75,6 @@ function drop(ev){
             //On success append the li element to the target UL
             targetElement.appendChild(document.getElementById(data));
         }
-    });
+    });//*/
+    targetElement.appendChild(document.getElementById(data));
 }
